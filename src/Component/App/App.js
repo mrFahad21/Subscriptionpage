@@ -61,7 +61,7 @@ class App extends React.Component {
   }
 
   updatePLName(name){
-    this.setState({this.updatePLName: name});
+    this.setState({updatePLName: name});
   }
 
   savePlaylist(){
@@ -77,8 +77,15 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
-      <h1 style={this.styles}> Hello!</h1>
+      <h1 style={this.styles}> Hello!
+      <a href="http://localhost: 3000">It's Musicophile</a>
+      </h1>
       <NewComp />
+      <SearchBar onSearch = {this.search} />
+      <div className="App-playlist">
+        <SearchResults SearchResults={this.state.SearchResults} onAdd={this.doThese} />
+        <Playlist playlistTracks={this.playlistTracks} onNameChange={this.updatePLName} onRemove={this.removeTrack} onSave={this.savePlaylist}/>
+      </div>
     </div>
     );
   }
