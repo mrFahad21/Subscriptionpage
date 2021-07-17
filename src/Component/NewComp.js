@@ -10,13 +10,15 @@ export class NewComp extends Component {
              imgURL: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_103837.png&f=1&nofb=1"
         };
     }
-    styles = {
+
+styles = {
     fontStyle : "italic",
     color: "purple"
   }
-  buttonChange = ()=> {
+  
+buttonChange = ()=> {
       this.setState({
-          message: "Hit the bell icon to ever miss an update",
+          message: "Hit the bell icon to never miss an update",
           sub: "Subscribed",
       });
   }
