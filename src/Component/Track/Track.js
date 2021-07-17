@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import "./Track.css";
 
 
 
-class SearchBar extends React.Component {
+class Track extends React.Component {
     
     
     constructor(props) {
@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
 
     renderAction(){
 
-        if(this.props.IsRemoval){
+        if(this.props.isRemoval){
             return (
                 <button className="Track-action" onClick={this.removeTrack}> - </button>
             );
@@ -60,4 +60,4 @@ class SearchBar extends React.Component {
     }
 }
 
-export default SearchBar;
+export default Track;
