@@ -20,19 +20,21 @@ class SearchBar extends React.Component {
         this.props.onAdd(this.props.track);
     }
 
-    removeTrack(){
-        this.props.onRenove(this.state.track);
+    removeTrack(event){
+        this.props.onRemove(this.state.track);
     }
 
 
     renderAction(){
-        if(this.props.isRemoval){
-            return{
+
+        if(this.props.IsRemoval){
+            return (
                 <button className="Track-action" onClick={this.removeTrack}> - </button>
-            };
-        } return {
+            );
+        } 
+        return (
                 <button className="Track-action" onClick={this.addTrack}> + </button>
-        };
+        );
     }
     
     render() {
@@ -44,7 +46,7 @@ class SearchBar extends React.Component {
                         {this.props.track.artist} | {this.props.track.album}
                     </p>
                     <iframe
-                        src="https://open.spotify.com/embed/track" + this.props.track,id}
+                        src= {"https://open.spotify.com/embed/track" + this.props.track,id}
                         width="300"
                         height="80"
                         frameborder="0"
@@ -54,7 +56,7 @@ class SearchBar extends React.Component {
                 </div>
                 {this.renderAction()}
             </div>
-        )
+        );
     }
 }
 
