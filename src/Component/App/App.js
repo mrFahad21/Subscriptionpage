@@ -6,6 +6,7 @@ import NewComp from './NewComp';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Track from '../Track/Track';
+import TrackList from '../TrackList/TrackList';
 import Playlist from '../Playlist/Playlist';
 
 class App extends React.Component {
@@ -83,7 +84,7 @@ class App extends React.Component {
     return (
     <div className="App">
       <h1 style={this.styles}> Hello!
-      <a href="http://localhost: 3000">It's Musicophile</a>
+      <a href="http://localhost:3000">It's Musicophile</a>
       </h1>
       <NewComp />
       <SearchBar onSearch = {this.search} />

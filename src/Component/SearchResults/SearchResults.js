@@ -4,7 +4,7 @@ import TrackList from "../TrackList/TrackList";
 
 
 class SearchResults extends React.Component {
-    render() {
+    render() { 
         return (
             <div className="Searchresults">
                 <h2>Results</h2>
