@@ -1,7 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import NewComp from './Component/NewComp';
+import Spotify from '../../Util/Spotify';
+import NewComp from './NewComp';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Track from '../Track/Track';
+import Playlist from '../Playlist/Playlist';
 
 class App extends React.Component {
   styles = {

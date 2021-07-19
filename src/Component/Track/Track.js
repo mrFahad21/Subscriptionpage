@@ -46,7 +46,7 @@ class Track extends React.Component {
                         {this.props.track.artist} | {this.props.track.album}
                     </p>
                     <iframe
-                        src= {"https://open.spotify.com/embed/track" + this.props.track,id}
+                        src= {"https://open.spotify.com/embed/track" + this.props.track.id}
                         width="300"
                         height="80"
                         frameborder="0"
